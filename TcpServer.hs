@@ -2,7 +2,7 @@ module TcpServer where
 
 import Control.Concurrent
 import Control.Exception
-import Network
+import Network (withSocketsDo, listenOn, accept, PortID(PortNumber))
 import Network.Socket (sClose)
 import GHC.IO.Handle (hClose)
 
